@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from collections.abc import AsyncIterator, Iterator, Sequence
 from typing import (
     Any,
@@ -14,7 +14,7 @@ from langgraph.pregel.types import All, StateSnapshot, StateUpdate, StreamMode
 
 
 class PregelProtocol(
-    Runnable[Union[dict[str, Any], Any], Union[dict[str, Any], Any]], ABC
+    Runnable[Union[dict[str, Any], Any], Union[dict[str, Any], Any]]
 ):
     @abstractmethod
     def with_config(
